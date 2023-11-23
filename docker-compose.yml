@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+# Bancos
+  pg-db:
+    image: "postgres"
+    restart: always
+    mem_limit: 1024m
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: 1234
